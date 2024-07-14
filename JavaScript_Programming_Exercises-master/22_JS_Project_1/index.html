@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Calculator in the Solar System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="content">
+            <h1>Weight Calculator in the Solar System</h1>
+            <div class="calculator">
+                <label for="planet">Select a Planet:</label>
+                <select id="planet">
+                    <option value="" disabled selected>Select a planet</option>
+                    <option value="Mercury" data-image="mercury.png">Mercury</option>
+                    <option value="Venus" data-image="venus.png">Venus</option>
+                    <option value="Earth" data-image="earth.png">Earth</option>
+                    <option value="Mars" data-image="mars.png">Mars</option>
+                    <option value="Jupiter" data-image="jupiter.png">Jupiter</option>
+                    <option value="Saturn" data-image="saturn.png">Saturn</option>
+                    <option value="Uranus" data-image="uranus.png">Uranus</option>
+                    <option value="Neptune" data-image="neptune.png">Neptune</option>
+                    <option value="Pluto" data-image="pluto.png">Pluto</option>
+                </select>
+                <label for="weight">Enter Weight on Earth (kg):</label>
+                <input
+                    type="number"
+                    id="weight"
+                    placeholder="Enter weight"
+                    required
+                />
+                <button id="calculate">Calculate Weight</button>
+                <div id="result"></div>
+                <div id="planetImageContainer" class="planet-image-container">
+                    <img id="planetImage" src="images/mercury.png" alt="Planet Image" class="planet-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/galaxy.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    background-color: rgba(34, 34, 34, 0.8); /* Slightly transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Heading Styles */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Calculator Styles */
+.calculator {
+    display: inline-block;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Select Element Styles */
+select, input[type="number"] {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+select:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Button Styles */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result Styles */
+#result {
+    margin-top: 20px;
+}
+
+/* Planet Image Container Styles */
+#planetImageContainer {
+    margin-top: 20px;
+}
+
+.planet-image {
+    max-width: 400px;
+    height: auto;
+}
